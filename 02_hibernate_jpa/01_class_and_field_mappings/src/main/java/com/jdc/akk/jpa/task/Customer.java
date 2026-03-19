@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Entity
+//@Entity
 @Data
 @Table(name = "customer_tbl")
 public class Customer {

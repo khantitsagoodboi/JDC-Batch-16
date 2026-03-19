@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
-@Entity
+//@Entity
 @Data
 @SecondaryTable(name = "contact_tbl")
 @Table(

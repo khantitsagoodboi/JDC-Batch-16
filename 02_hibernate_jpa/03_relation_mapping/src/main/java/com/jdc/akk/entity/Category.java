@@ -8,12 +8,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-//@Entity
+@Entity
 @Data
 @Table(name = "category_tbl")
 public class Category {
@@ -27,7 +28,7 @@ public class Category {
 	@Column(columnDefinition = "tinyint(1) not null default 1")
 	private boolean isActive;
 	
-	@ElementCollection
-	@OneToMany(mappedBy = "category")  //add join table
+	@OneToMany  //add join table
+	@JoinTable(name = "cat_prod_tbl")
 	private List<Product> products;
 }

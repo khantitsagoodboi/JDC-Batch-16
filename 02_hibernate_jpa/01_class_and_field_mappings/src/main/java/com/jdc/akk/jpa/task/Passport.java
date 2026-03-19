@@ -12,7 +12,7 @@ import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 import lombok.Data;
 
-@Entity
+//@Entity
 @Data
 @Table(name = "passport_tbl")
 public class Passport {

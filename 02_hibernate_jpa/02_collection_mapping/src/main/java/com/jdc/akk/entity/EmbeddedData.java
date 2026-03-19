@@ -1,15 +1,16 @@
 package com.jdc.akk.entity;
 
-import java.util.List;
-
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Embeddable;
 import lombok.Data;
 
 @Data
 @Embeddable
 public class EmbeddedData {
-	private String value;
+	//@Column(name = "value_one")
+	private String valueFromEmbedded;
+	
+	//@Column(name = "value_two")
+	//private int valueTwoFromEmbedded;
 	
 //	@ElementCollection
 //	private List<String> data;

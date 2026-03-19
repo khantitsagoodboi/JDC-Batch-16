@@ -15,7 +15,7 @@ import jakarta.persistence.Transient;
 import lombok.Data;
 
 @Data
-@Entity
+//@Entity
 @Table(name = "product_tbl")
 public class Product {
 	

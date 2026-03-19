@@ -15,9 +15,9 @@ import lombok.Data;
 @Table(name = "person_tbl")
 public class Person {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	//@GeneratedValue(generator = "gen_person_tbl")
-	//@TableGenerator(name = "gen_person_tbl", initialValue = 1, allocationSize = 1)
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(generator = "gen_person_tbl")
+	@TableGenerator(name = "gen_person_tbl", initialValue = 1, allocationSize = 10)
 	//@SequenceGenerator(name = "gen_person_tbl", initialValue = 5, allocationSize = 100)
 	private int id;
 	private String name;

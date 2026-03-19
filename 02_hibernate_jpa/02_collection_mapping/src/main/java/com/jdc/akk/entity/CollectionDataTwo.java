@@ -44,13 +44,14 @@ public class CollectionDataTwo {
 					@JoinColumn(name = "map_id")
 			})
 	@MapKeyColumn(name = "key_id")
-	//@Enumerated(EnumType.STRING) //for values position
-	@MapKeyEnumerated(EnumType.STRING) //for key position
-	private Map<Days, String> maps;
+	@Enumerated(EnumType.STRING) //for values position
+	//@MapKeyEnumerated(EnumType.STRING) //for key position
+	//private Map<Days, String> maps;
+	private Map<String, Days> maps;
 	
 	private Days day; 
 	
-	public enum Days{
+	private enum Days{
 		MON,
 		TUE,
 		WED,

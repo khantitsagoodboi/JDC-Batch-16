@@ -19,29 +19,35 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
-@Entity
+//@Entity
 @Table(name = "collection_three_tbl")
 public class CollectionDataThree {
 	@Id
 	private int id;
 	
 	@ElementCollection
-//	@Column(name = "list_value")
-//	@CollectionTable(
-//			name = "list_tbl",
-//			joinColumns = {
-//					@JoinColumn(name = "list_id")
-//			})
-//	@Enumerated(EnumType.STRING)
-//	@OrderBy("lists asc")
+	//@Column(name = "list_value")
+	@CollectionTable(
+			name = "list_tbl",
+			joinColumns = {
+					@JoinColumn(name = "list_id")
+			})
+	
+	@OrderBy("lists asc")
 	private List<EmbeddedData> lists;
 	
 	@ElementCollection
-	
-	//@Enumerated(EnumType.STRING) //for values position
-	//@MapKeyEnumerated(EnumType.STRING) //for key position
+	@Column(name = "map_value")
+	@CollectionTable(
+			name = "map_tbl",
+			joinColumns = {
+					@JoinColumn(name = "map_id")
+			})
+	@MapKeyColumn(name = "key_id")
 	private Map<Integer, EmbeddedData> maps;
+	//private Map<EmbeddedData, String> maps;
 	
+	@Enumerated(EnumType.STRING)
 	private Days day; 
 	
 	public enum Days{

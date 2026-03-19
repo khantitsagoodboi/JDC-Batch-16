@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
 
-@Entity
+//@Entity
 @Data
 @Table(
 		name = "member_tbl",
@@ -23,3 +23,4 @@ public class Member {
 	private String name;
 	private String address;
 }
+

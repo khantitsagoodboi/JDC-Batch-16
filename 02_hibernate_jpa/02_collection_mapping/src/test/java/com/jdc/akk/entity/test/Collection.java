@@ -12,7 +12,7 @@ public class Collection {
 	EntityManagerFactory emf;
 	EntityManager em;
 	
-	//@Test
+	@Test
 	void test() {
 		emf = Persistence.createEntityManagerFactory("02_collection_mapping");
 	}

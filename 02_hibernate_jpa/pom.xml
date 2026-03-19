@@ -54,5 +54,7 @@
 		<module>01_class_and_field_mappings</module>
 		<module>02_collection_mapping</module>
 		<module>03_relation_mapping</module>
+		
+		<module>04_inheritance_mapping</module>
 	</modules>
 </project>

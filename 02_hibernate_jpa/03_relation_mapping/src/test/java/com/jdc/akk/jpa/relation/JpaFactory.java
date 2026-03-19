@@ -15,6 +15,4 @@ public class JpaFactory {
 	void testRelation() {
 		emf = Persistence.createEntityManagerFactory("03_relation_mapping");
 	}
-	
-	
 }

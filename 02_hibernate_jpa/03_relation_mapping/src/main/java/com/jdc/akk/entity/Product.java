@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
-//@Entity
+@Entity
 @Table(name = "product_tbl")
 public class Product {
 	@Id
@@ -23,6 +23,6 @@ public class Product {
 	@Column(columnDefinition = "tinyint(1) not null default 1")
 	private boolean isTrue;
 	
-	@ManyToOne    //add a column
+	@ManyToOne 		 //add a column
 	private Category category;
 }

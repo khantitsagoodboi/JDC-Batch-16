@@ -11,7 +11,7 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Entity
+//@Entity
 @Data
 @Table(name = "contact_tbl")
 public class Contact {

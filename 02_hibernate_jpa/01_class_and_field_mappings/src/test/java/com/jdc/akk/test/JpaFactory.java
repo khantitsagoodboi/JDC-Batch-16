@@ -12,7 +12,7 @@ public class JpaFactory {
 	EntityManagerFactory emf;
 	EntityManager em;
 
-	@Test
+	//@Test
 	void test() {
 		emf = Persistence.createEntityManagerFactory("01_class_and_field_mappings");  //build database table;
 //		em = emf.createEntityManager();

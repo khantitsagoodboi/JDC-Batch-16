@@ -27,8 +27,8 @@ public class Customer {
 	@Column(columnDefinition = "tinyint(1) not null default 1")
 	private boolean isActive;
 	
-	@OneToOne(mappedBy = "customer")
-	private Contact contact;
+//	@OneToOne(mappedBy = "customer")
+//	private Contact contact;
 	
 	@ManyToMany
 	private List<Address> addresses;
