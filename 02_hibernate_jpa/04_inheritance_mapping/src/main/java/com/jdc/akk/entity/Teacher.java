@@ -8,8 +8,12 @@ import lombok.EqualsAndHashCode;
 @Data
 @Entity
 @EqualsAndHashCode(callSuper = false)
-@DiscriminatorValue("4")
+@DiscriminatorValue("3")
 public class Teacher extends Account{
+	
+	public Teacher() {
+		setRole(Role.TEACHER);
+	}
 
 	private String teaching;
 }

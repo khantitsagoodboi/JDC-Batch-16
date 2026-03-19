@@ -15,6 +15,10 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 @DiscriminatorValue("2")
 public class Staff extends Account{
+	
+	public Staff() {
+		setRole(Role.STAFF);
+	}
 
 	@ElementCollection
 	@CollectionTable(

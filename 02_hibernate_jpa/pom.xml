@@ -56,5 +56,6 @@
 		<module>03_relation_mapping</module>
 		
 		<module>04_inheritance_mapping</module>
+		<module>05_converter</module>
 	</modules>
 </project>

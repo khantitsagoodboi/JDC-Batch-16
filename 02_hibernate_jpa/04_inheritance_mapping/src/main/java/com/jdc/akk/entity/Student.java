@@ -9,9 +9,13 @@ import lombok.EqualsAndHashCode;
 @Data
 @Entity
 @EqualsAndHashCode(callSuper = false)
-@DiscriminatorValue("3")
+@DiscriminatorValue("4")
 public class Student extends Account{
-
+	
+	public Student() {
+		setRole(Role.STUDENT);
+	}
+	
 	@ManyToOne
 	private Course course;
 }
