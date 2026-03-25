@@ -1,3 +1,7 @@
+insert into transfer_tbl (id,name,balance) values (1,'Andrew',20000);
+
+insert into transfer_tbl (id,name,balance) values (2,'John',20000);
+
 insert into course(name, description) values ('Java Basic','This is about java basic');
 
 insert into course(name, description) values ('Spring','This is about spring frame work');
