@@ -57,5 +57,6 @@
 		
 		<module>04_inheritance_mapping</module>
 		<module>05_converter</module>
+		<module>06_entity_manager</module>
 	</modules>
 </project>
