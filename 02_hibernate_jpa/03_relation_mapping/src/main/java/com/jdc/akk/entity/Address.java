@@ -29,6 +29,6 @@ public class Address {
 	@Column(length = 45, nullable = false)
 	private String street;
 
-	@ManyToMany (mappedBy = "addresses")
-	private List<Customer> customer;
+//	@ManyToMany (mappedBy = "addresses")
+//	private List<Customer> customer;
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -27,10 +28,10 @@ public class Customer {
 	@Column(columnDefinition = "tinyint(1) not null default 1")
 	private boolean isActive;
 	
-//	@OneToOne(mappedBy = "customer")
-//	private Contact contact;
+	@OneToOne(fetch = FetchType.LAZY, optional = false)
+	private Contact contact;
 	
-	@ManyToMany
+	@ManyToMany(fetch = FetchType.EAGER)
 	private List<Address> addresses;
 	
 }

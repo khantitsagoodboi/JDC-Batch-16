@@ -28,12 +28,18 @@
 			<version>${hibernate.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jdc.mkt</groupId>
+			<artifactId>PrintLogger</artifactId>
+			<version>1.0</version>
 		</dependency>
 	</dependencies>
 
@@ -54,9 +60,12 @@
 		<module>01_class_and_field_mappings</module>
 		<module>02_collection_mapping</module>
 		<module>03_relation_mapping</module>
-		
+
 		<module>04_inheritance_mapping</module>
 		<module>05_converter</module>
 		<module>06_entity_manager</module>
+
+
+		<module>07_query</module>
 	</modules>
 </project>

@@ -11,7 +11,7 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-//@Entity
+@Entity
 @Data
 @Table(name = "contact_tbl")
 public class Contact {
@@ -25,7 +25,7 @@ public class Contact {
 	@Check(constraints = "email REGEXP '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$'")
 	private String email;
 	
-	@OneToOne
-	private Customer customer;
+//	@OneToOne
+//	private Customer customer;
 	
 }
